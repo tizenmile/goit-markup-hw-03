@@ -141,7 +141,7 @@ ol {
 
 .header-cont {
   display: flex;
-  margin-left: 291px;
+  margin-left: auto;
 }
 
 /* hero */
