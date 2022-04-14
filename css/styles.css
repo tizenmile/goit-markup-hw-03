@@ -1,0 +1,257 @@
+:root {
+  --general-color: #212121;
+  --hover-color: #2196f3;
+  --background-color: #f5f4fa;
+  --address-color: #757575;
+  --main-background-color: #2f303a;
+  --main-btn-backgroung-color: #188ce8;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--general-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.a {
+  text-decoration: none;
+  color: var(--general-color);
+}
+
+.current {
+  color: var(--hover-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Header */
+.header-nav {
+  width: 1600px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+}
+
+.header-logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--hover-color);
+}
+
+.header-logo-s {
+  color: var(--general-color);
+}
+
+.header-menu .current {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-item {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-item:hover,
+.header-item:focus {
+  color: var(--hover-color);
+}
+
+.header-mail {
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--address-color);
+}
+
+.header-mail:hover,
+.header-mail:focus {
+  color: var(--hover-color);
+}
+
+.header-tel {
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--address-color);
+}
+
+/* main */
+
+.heading {
+  background: var(--main-background-color);
+}
+
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--background-color);
+}
+
+.main-btn {
+  background: var(--hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--background-color);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  background-color: var(--main-btn-backgroung-color);
+}
+
+/* hero */
+
+.benefits-item-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.benefits-item-p {
+  line-height: 1.14;
+  color: var(--address-color);
+}
+
+/* Work */
+
+.title-work {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/* Team */
+
+.team {
+  background: var(--background-color);
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+.team-list-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--general-color);
+}
+
+.team-list-text {
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--address-color);
+}
+
+/* Footer */
+
+.footer {
+  background: var(--main-background-color);
+}
+
+.footer-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.82;
+  color: var(--hover-color);
+}
+
+.footer-logo-s {
+  color: var(--background-color);
+}
+
+.address-item {
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--background-color);
+}
+
+.address-mail {
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--address-color);
+}
+
+.address-tel {
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--address-color);
+}
+
+/* Portfolio */
+
+.main-btn-item {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  background: var(--background-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main-btn-item:hover {
+  background-color: var(--hover-color);
+  color: var(--background-color);
+}
+
+.main-btn-item:focus {
+  background-color: var(--hover-color);
+  color: var(--background-color);
+}
+
+.port-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.port-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--address-color);
+}
