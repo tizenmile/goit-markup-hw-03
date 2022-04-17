@@ -16,6 +16,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+img {
+  display: block;
+}
+
 p,
 h1,
 h2,
@@ -63,7 +67,6 @@ ol {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -73,8 +76,8 @@ ol {
 /* Header */
 
 .header {
-  padding: 32px 0 32px 0;
-  border: 1px solid #ececec;
+  padding: 24px 0 25px 0;
+  border-bottom: 1px solid #ececec;
 }
 
 .header .container {
@@ -100,11 +103,14 @@ ol {
   color: var(--general-color);
 }
 
+.header-nav {
+  margin-left: 93px;
+}
+
 .header-menu {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  margin-left: 93px;
 }
 
 .header-item {
@@ -147,8 +153,19 @@ ol {
 /* hero */
 
 .hero {
-  background: var(--main-background-color);
-  padding: 200px 0px 200px 452px;
+  background: var(--work-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.hero-sec {
+  background-color: var(--main-background-color);
+  padding: 200px 0px 200px 0px;
+  text-align: center;
+}
+
+.hero-three {
+  padding-top: 0;
 }
 
 .hero-title {
@@ -158,10 +175,9 @@ ol {
   letter-spacing: 0.06em;
   color: var(--background-color);
   width: 696px;
-  height: 120px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: var(--typical-margin);
+  margin: 0 auto;
 }
 
 .hero-btn {
@@ -178,8 +194,8 @@ ol {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 32px;
-  margin: 0 250px 0;
   border-color: transparent;
+  margin-top: var(--typical-margin);
 }
 
 .hero-btn:hover,
@@ -190,7 +206,7 @@ ol {
 /* benefits */
 
 .benefits {
-  padding: 94px 215px;
+  padding: 94px 0;
 }
 
 .benefits-item {
@@ -206,6 +222,7 @@ ol {
 .benefits-item-title {
   color: var(--general-color);
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -233,20 +250,24 @@ ol {
 
 .work-item {
   margin-right: var(--typical-margin);
-  margin-bottom: 94px;
+}
+
+.work-item:last-child {
+  margin-right: 0;
 }
 
 /* Team */
 
 .team {
   background: var(--background-color);
+  padding-bottom: 0;
 }
 
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  padding: 94px 0 50px 0;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -254,15 +275,22 @@ ol {
   display: flex;
 }
 
+.team-list-div {
+  padding-bottom: 30px;
+}
+
 .team-list-item {
   width: 270px;
-  height: 368px;
   background-color: var(--work-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 94px;
   margin-right: var(--typical-margin);
+}
+
+.team-list-item:last-child {
+  margin-right: 0;
 }
 
 .team-list-title {
@@ -332,10 +360,10 @@ ol {
 .main-btn-list {
   display: flex;
   justify-content: center;
-  margin: 94px 0 50px 0;
+
 }
 
-.main-btn-item {
+.main-btn {
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
@@ -346,8 +374,18 @@ ol {
   cursor: pointer;
   padding: 6px 22px;
   border-radius: 4px;
-  margin-right: 8px;
+
   border-color: transparent;
+}
+
+.main-btn-list:last-child {
+  margin: 0;
+}
+
+.main-btn-item {
+  padding-top: 94px;
+  padding-bottom: 34px;
+  margin-right: 8px;
 }
 
 .current-port {
@@ -355,23 +393,39 @@ ol {
   color: var(--work-color);
 }
 
-.main-btn-item:hover,
-.main-btn-item:focus {
+.main-btn:hover,
+.main-btn:focus {
   background-color: var(--hover-color);
   color: var(--background-color);
+}
+
+.port-sec{
+  margin-bottom: 94px;
 }
 
 .port-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -40px;
-  margin-bottom: 94px;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.port-list:nth-child(3n) {
+  margin-right: 0;
+}
+
+.port-div {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  border: 1px solid #eeeeee;
+  border-top: 0;
 }
 
 .port-item {
-  margin: 0 30px 30px 0;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .port-title {
@@ -379,7 +433,7 @@ ol {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding: 20px 0 4px 24px;
+  margin-bottom: 4px;
 }
 
 .port-text {
@@ -387,6 +441,3 @@ ol {
   font-size: 16px;
   line-height: 1.87;
   color: var(--address-color);
-  padding-left: 24px;
-  padding-bottom: 20px;
-}
