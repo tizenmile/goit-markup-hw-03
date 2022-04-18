@@ -76,7 +76,7 @@ ol {
 /* Header */
 
 .header {
-  padding: 24px 0 25px 0;
+  /* padding: 24px 0 25px 0; */
   border-bottom: 1px solid #ececec;
 }
 
@@ -97,6 +97,7 @@ ol {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--hover-color);
+  padding: 24px 0px 25px 0;
 }
 
 .header-logo-s {
@@ -111,13 +112,15 @@ ol {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin: 24px 0 25px 0;
 }
 
 .header-item {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding: 0 50px 0 0;
+  padding: 24px 50px 25px 0;
+
 }
 
 .header-item:hover,
@@ -130,7 +133,7 @@ ol {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--address-color);
-  padding-right: 50px;
+  padding: 24px 50px 25px 0;
 }
 
 .header-mail:hover,
@@ -143,6 +146,7 @@ ol {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--address-color);
+  padding: 24px 0 25px 0;
 }
 
 .header-cont {
@@ -260,7 +264,6 @@ ol {
 
 .team {
   background: var(--background-color);
-  padding-bottom: 0;
 }
 
 .team-title {
@@ -276,7 +279,8 @@ ol {
 }
 
 .team-list-div {
-  padding-bottom: 30px;
+  padding: 30px 0 30px 0;
+  /* padding-bottom: 30px; */
 }
 
 .team-list-item {
@@ -285,7 +289,7 @@ ol {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
   margin-right: var(--typical-margin);
 }
 
@@ -298,7 +302,8 @@ ol {
   font-size: 16px;
   line-height: 1.18;
   color: var(--general-color);
-  margin: 30px 0 10px 0;
+  /* margin: 30px 0 10px 0; */
+  margin-bottom: 4px;
   text-align: center;
 }
 
@@ -337,6 +342,10 @@ ol {
   margin-bottom: 9px;
 }
 
+.address-item:last-child {
+  margin-bottom: 0;
+}
+
 .address-real {
   font-style: normal;
   line-height: 1.71;
@@ -348,6 +357,7 @@ ol {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
+
 
 .address-tel {
   font-style: normal;
@@ -383,8 +393,7 @@ ol {
 }
 
 .main-btn-item {
-  padding-top: 94px;
-  padding-bottom: 34px;
+  margin-bottom: 50px;
   margin-right: 8px;
 }
 
@@ -397,10 +406,6 @@ ol {
 .main-btn:focus {
   background-color: var(--hover-color);
   color: var(--background-color);
-}
-
-.port-sec{
-  margin-bottom: 94px;
 }
 
 .port-list {
@@ -441,3 +446,4 @@ ol {
   font-size: 16px;
   line-height: 1.87;
   color: var(--address-color);
+}
